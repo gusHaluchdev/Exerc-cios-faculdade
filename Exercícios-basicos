@@ -1,0 +1,217 @@
+Exercício 1: Votação
+Crie um programa que pergunte a idade do usuário e confira se ele tem idade para
+votar.
+● No Brasil, o voto é permitido para quem tem 16 anos ou mais.
+● Use uma estrutura condicional para verificar a idade. Se for maior ou igual a
+16, exiba "Você já pode votar!".
+● Caso contrário, exiba "Você ainda não tem idade para votar."
+Idade= int(input("Digite a sua idade: "))
+if Idade <= 16:
+print("Você nao pode votar.")
+else:
+print("Você pode votar.")
+Exercício 2: Positivo, Negativo ou Zero
+Crie um programa que peça um número inteiro ao usuário.
+● Se o número for maior que zero, exiba a mensagem: "O número X é Positivo."
+● Se o número for menor que zero, exiba: "O número X é negativo."
+● Senão, exiba: "O número é Zero."
+Numeros=int(input("Digite um numero: "))
+if Numeros > 0:
+print("O numero é positivo")
+elif Numeros < 0:
+print("O numero é negativo")
+else:
+print("O numero é zero")
+Exercício 3: O Desconto do Cliente
+Peça ao usuário que digite o valor total de uma compra (use float() ).
+● Se o valor da compra for maior que R$ 100.00, aplique um desconto de 10% e
+mostre o valor final a ser pago.
+● Se for menor ou igual a R$ 100.00, o cliente não ganha desconto. Exiba o
+valor normal da compra e uma mensagem: "Nas compras acima de R$ 100,
+você ganha 10% de desconto!".
+C=float(input("Digite o valor da compra " ": "))
+if C>100:
+D=C*0.10
+P=C-D
+print("O valor do desconto é de "10 "%: ", D)
+print("O valor a pagar é de " ": ", P)
+else:
+print("Nas compras acima de 100 reais, é aplicado um desconto de
+10%!!!.")
+Exercício 4: Sistema de Notas
+Peça ao usuário que digite uma nota (use float() ).
+● Se a nota for maior ou igual a 9.0, exiba: "Parabéns!! Você foi aprovado!".
+● Se a nota for entre 7.0 e 8.9, exiba: "Aprovado.".
+● Se a nota for entre 4.0 e 6.9, exiba: "Em Recuperação".
+● Caso seja menor que 4.0, exiba: "Reprovado".
+Notas= float(input("Digite a nota do aluno: " ))
+if Notas >= 9.0:
+print("Parabéns!! Você foi aprovado!")
+elif Notas >= 7.0 and Notas < 8.9:
+print("Aprovado.")
+elif Notas >= 4.0 and Notas < 6.9 :
+print("Em Recuperação")
+else:
+print("Reprovado")
+Exercício 5: Par ou Ímpar
+Peça ao usuário que digite um número inteiro.
+● Use o operador de resto (%) para verificar se o número é par ou ímpar.
+● Exiba a mensagem correspondente.
+numero = int(input("Digite um número inteiro: "))
+if numero % 2 == 0:
+print("O número é par.")
+else:
+print("O número é ímpar.")
+Exercício 6: Comparando Dois Números
+Peça dois números ao usuário.
+● O programa deve informar qual deles é o maior.
+● Caso sejam iguais, o programa também precisará informar.
+N1 = float(input("Enter the first number: "))
+N2 = float(input("Enter the second number: "))
+if N1 > N2:
+print("The first number is greater than the second number.")
+elif N1 < N2:
+print("The first number is less than the second number.")
+else: print("The first number is equal to the second number.")
+Exercício 7: Verificação de Login
+Crie uma variável chamada usuario_correto com o valor "admin".
+● Peça para o usuário digitar um nome de usuário.
+● Se for igual ao armazenado, exiba "Acesso concedido".
+● Caso contrário, "Usuário desconhecido".
+Usuario_correto = "admin"
+input_usuario = input("Digite o nome de usuário: ")
+if input_usuario == Usuario_correto:
+print("Acesso concedido.")
+else: print("Acesso negado.")
+Exercício 8: Calculadora de IMC Simples
+Peça o peso e a altura do usuário.
+● Calcule o IMC ($peso / altura^2$).
+● Se o IMC for maior que 25, exiba "Acima do peso ideal".
+● Caso contrário, exiba "Peso dentro da normalidade".
+Peso = 0
+altura = 0
+float(Peso)
+float(altura)
+IMC = Peso / (altura * altura)
+if IMC>25:
+print("Você está acima do peso")
+else IMC<25:
+print("Você está abaixo do peso")
+Exercício 9: Classificação de Triângulos
+Peça os três lados de um triângulo ao usuário e verifique:
+● Se todos os lados forem iguais: "Equilátero".
+● Se apenas dois forem iguais: "Isósceles".
+● Se todos forem diferentes: "Escaleno".
+L1=float(input("Digite o primeiro lado do triângulo: "))
+L2=float(input("Digite o segundo lado do triângulo: "))
+L3=float(input("Digite o terceiro lado do triângulo: "))
+if L1=L2=L3:
+print("O triângulo é equilátero.")
+elif L1==L2 or L1==L3 or L2==L3:
+print("O triângulo é isósceles.")
+else:
+print("O triângulo é escaleno.")
+Exercício 10: Múltiplo de 5
+Peça um número ao usuário e informe se ele é um múltiplo de 5.
+N=int(input("Digite um numero: "))
+if N%5==0:
+print("O numero é divisivel por 5")
+else: print("O numero não é divisivel por 5")
+Exercício 11: Categorias de Atleta
+Solicite a idade de um nadador e classifique-o:
+● 5 a 7 anos: Infantil A.
+● 8 a 10 anos: Infantil B.
+● 11 a 13 anos: Juvenil A.
+● 14 a 17 anos: Juvenil B.
+● Maiores de 18: Adulto.
+Idade=int(input("Digite a sua idade: "))
+if 5<Idade<7
+print("Infantil A")
+elif 8<=Idade<10:
+print("Infantil B")
+elif 11<=Idade<13:
+print("Juvenil A")
+elif 14<=Idade<17:
+print("Juvenil B")
+elif Idade>=18:
+print("Adulto")
+Exercício 12: Calculadora de Viagem
+Pergunte a distância que um passageiro deseja percorrer em km.
+● Calcule o preço da passagem:
+o Cobrando R$ 0,50 por km para viagens de até 200km.
+o Cobrando R$ 0,45 para viagens mais longas.
+viagem= float(input("Digite a kilometragem da viagem: "))
+if viagem <= 200:
+valor = viagem * 0.50
+else: valor = viagem * 0.45
+print("O valor da passagem é: R$ {:.2f}".format(valor))
+Exercício 13: Verificação de Ano Bissexto
+Peça ao usuário um ano (ex.: 2024).
+o Informe se ele é bissexto (divisível por 4).
+Ano_bissexto = int(input("Digite um ano: "))
+if (Ano_bissexto % 4 == 0 )
+print("O ano é bissexto")
+else:
+print("O ano não é bissexto")
+Exercício 14: Aumento Salarial
+Peça o salário de um funcionário.
+● Se o salário for superior a R$ 1.621,00, calcule um aumento de 10%.
+● Para inferiores ou iguais, o aumento é de 15%.
+Salario= float(input("digite seu salário: "))
+if Salario > 1.621.00:
+Salario = Salario * 0.10
+print("O valor do seu novo salário é: ", Salario)
+else:
+Salario = Salario * 0.15
+print("O valor do seu novo salário é: ", Salario)
+Exercício 15: Simulador de Radar
+Pergunte ao usuário a velocidade de um carro.
+● Se ultrapassar 80 km/h, exiba uma mensagem dizendo que o usuário foi
+multado. A multa custa R$ 7,00 por cada km acima do limite.
+velocidade = int(input("Digite a velocidade do carro: "))
+if velocidade > 80:
+velocidade_execida = velocidade - 80 * 7
+print("Multado! Você excedeu o limite de velocidade.")
+else print("Velocidade dentro do limite permitido.")
+Exercício 16: Conversor de Temperatura
+Peça ao usuário uma temperatura em Celsius.
+● Pergunte se o ele quer converter para Fahrenheit (F) ou Kelvin (K).
+● Exiba o resultado da opção escolhida.
+Obs.: fórmula para converter de Celsius para Fahrenheit : (°C × 9/5) + 32
+fórmula para converter de Celsius para Kelvin: °C + 273,15
+T= float(input("Digite a temperatura em celsius: "))
+print ("voce quer converter para fahrenheit ou kelvin?")
+escolha = input("Digite F para fahrenheit ou K para kelvin: ")
+if escolha == "F" or escolha == "f":
+F = (T * 9/5) + 32
+print ("A temperatura em fahrenheit é: ", F)
+elif escolha == "K" or escolha == "k":
+K = T + 273.15
+print ("A temperatura em kelvin é: ", K)
+Exercício 17: Loja de Tintas
+Peça o tamanho em metros quadrados da área a ser pintada. Considere que a
+cobertura da tinta é de 1 litro para cada 3 metros quadrados e que a tinta é vendida
+em latas de 18 litros (R$ 80,00). Informe ao usuário se ele precisa de apenas uma
+lata ou mais de uma.
+A= float(input("Qual a area que voce deseja pintar? "))
+Area = A/3
+if Area <= 18:
+print("Voce vai precisar de apenas 1 lata de tinta")
+else:
+print("Voce vai precisar de ", Area, "litros de tinta")
+Exercício 18: Aprovação de Empréstimo
+Escreva um programa para aprovar o empréstimo bancário para a compra de uma
+casa. Pergunte o valor da casa, o salário do comprador e em quantos anos ele vai
+pagar. A prestação mensal não pode exceder 30% do salário ou o empréstimo será
+negado.
+Na sequência, classifique as estruturas condicionais dos algoritmos desenvolvidos
+em: estrutura condicional simples, estrutura condicional composta e estrutura
+condicional aninhada e justifique.
+Valor= float(input("Digite o valor do emprestimo: "))
+Salario = float(input("Digite o valor do salario: "))
+Anos = int(input("Digite a quantidade de anos para pagar: "))
+Prestacao = Valor / (Anos * 12)
+if Prestacao <= Salario * 0.3:
+print("Emprestimo aprovado!")
+else:
+print("Emprestimo negado.")
