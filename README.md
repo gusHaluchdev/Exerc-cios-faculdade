@@ -1,2 +1,20 @@
-# Exerc-cios-faculdade
-Um repositório no GitHub com exercícios da faculdade é um espaço onde você organiza e armazena todos os códigos, listas de exercícios e trabalhos feitos ao longo das disciplinas.  Ele funciona como um histórico do seu aprendizado, permitindo acompanhar sua evolução, revisar conteúdos e compartilhar seu progresso com professores ou colegas.
+# Exercicios-faculdade
+Este repositório contém exercícios desenvolvidos durante a faculdade, com foco em prática, fixação de conteúdo e desenvolvimento de lógica de programação.
+
+- Objetivo - 
+Reforçar conceitos aprendidos em aula
+Melhorar raciocínio lógico
+Praticar resolução de problemas
+Organizar exercícios por tema/disciplina
+
+-Progresso-
+ Lógica básica
+ Condicionais
+ Laços de repetição
+ Funções avançadas
+ Estruturas de dados
+
+ -Observações-
+Os exercícios podem conter diferentes níveis de dificuldade
+Alguns códigos são versões iniciais e podem ser otimizados
+Foco principal é aprendizado, não perfeição
