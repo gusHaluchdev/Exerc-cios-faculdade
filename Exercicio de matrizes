@@ -1,0 +1,61 @@
+1
+import numpy as np
+manha = np.array([
+[5,10,15],
+[6,7,8],
+[29,22,13],
+])
+tarde = np.array([
+[3,3,6],
+[4,6,7],
+[8,0,34],
+])
+total = manha + tarde
+print(total)
+print(manha)
+print(tarde)
+2
+import numpy as np
+estoque_inicial = np.array([10, 20, 30])
+vendidos = np.array([5, 10, 15])
+estoque_final = estoque_inicial - vendidos
+print("Estoque final:", estoque_final)
+print(estoque_inicial)
+print(vendidos)
+3
+import Numpy as np
+ingredientes = np.array ([[2 ,3 ,5],
+[8, 7 , 1]])
+pedidos = np.array ([[1 ,2],
+[3 ,4],
+[5 ,6]])
+print(ingredientes)
+print(pedidos)
+total = ingredientes * pedidos
+print(total)
+4
+import numpy as np
+salarios = np.array([1000, 1200, 1300, 1400, 5000])
+salario_ajustado = salarios * 1.10
+print(salario_ajustado)
+print(salarios)
+5
+import numpy as np
+matriz_temporaria = np.random.uniform(10, 20, (3, 3))
+matriz_zerada = matriz_temporaria * 0
+print(matriz_temporaria)
+print(matriz_zerada)
+6
+import numpy as np
+matriz_temporaria = np.random.uniform(10, 20, (4, 4))
+matriz_unitaria = matriz_temporaria * 0 + 1
+print(matriz_temporaria)
+print(matriz_unitaria)
+7
+import numpy as np
+matriz_temporaria = np.random.randint(10, 21, (5,5))
+nova_matriz = np.copy(matriz_temporaria)
+nova_matriz [1, 2] = 5
+nova_matriz [3, 4] = 55
+print(matriz_temporaria)
+print(nova_matriz)
