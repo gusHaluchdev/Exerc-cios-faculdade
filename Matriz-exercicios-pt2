@@ -1,0 +1,110 @@
+1
+import numpy as np
+matriz = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+soma_total = np.sum(matriz)
+print("A soma da matriz é:", soma_total)
+2
+import numpy as np
+numero= int(input("Digite um número: "))
+matriz_indentidade = np.eye(numero)
+print(matriz_indentidade)
+3
+import numpy as np
+matriz = np.array([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13,
+14, 15, 16]])
+numero = int(input("Digite um número : "))
+if numero in matriz:
+print("O número está presente na matriz.")
+else:
+print("O número não está presente na matriz.")
+4
+import numpy as np
+matriz = np.array([[1, 2,], [4, 5,],])
+matriz [[0, 1]] = matriz [[1, 0]]
+print(matriz)
+5
+import numpy as np
+matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print (matriz)
+n = int(input("Matriz multiplicada por: "))
+matriz_nova = matriz * n
+print (matriz_nova)
+6
+matriz = np.array([[1, 2, 3,4 ], [5, 6, 7,8 ], [7, 8, 9,10]])
+print(matriz)
+contador_pares = 0
+for linha in matriz:
+for elemento in linha:
+if elemento % 2 == 0:
+contador_pares += 1
+print("Quantidade de números pares na matriz:", contador_pares)
+else: print("Nenhum número par encontrado na matriz.")
+7
+matriz = np.random.randint(0, 101, (5, 5))
+maior número = np.max(matriz)
+print("O maior número na matriz é:", maior numero)
+8
+import numpy as np
+matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+for i in range(matriz.shape[0]):
+media = np.mean(matriz[i])
+print(f'Média da linha {i}: {media}')
+9
+import numpy as np
+matriz = np.array([[1, 2, 3, 4], [22, 5, 6, 11], [7, 8, 9, 10]])
+soma = np.trace(matriz)
+print("A soma dos elementos da diagonal principal é:", soma)
+10
+import numpy as np
+matriz = n*m = np.array([[1, 2], [3, 4]])
+print(matriz)
+matriz_transposta = np.transpose(matriz)
+print(matriz_transposta)
+11
+import numpy as np
+matriz = np.array ([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(matriz)
+soma = np.sum(matriz[i])
+soma.append(soma)
+lista = list(soma)
+print(soma)
+12
+import numpy as np
+matriz = np.array([[1, 2, 3],
+[2, 4, 5],
+[3, 5, 6]])
+def verificar_simetria(matriz):
+if np.array_equal(matriz, matriz.T):
+return "A matriz é simétrica."
+else:
+return "A matriz não é simétrica."
+13
+import numpy as np
+matriz = np.random.randint(1, 10, (5, 5))
+print("Matriz:", matriz)
+diagonal_secundaria = np.fliplr(matriz).diagonal()
+print("Diagonal Secundária:", diagonal_secundaria)
+14
+from array import array
+import numpy as np
+matriz_A = np.array([[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]])
+matriz_B = np.array ([[9, 8, 7],
+[6, 5, 4],
+[3, 2, 1]])
+matriz_C = matriz_A * matriz_B
+print(matriz_C)
+15
+matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(matriz)
+matriz_rotacioanda = np.rot90(matriz)
+print(matriz_rotacioanda)
+sem o numpy
+matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+matriz_rotacionada = [[0 for _ in range(len(matriz))] for _ in
+range(len(matriz[0]))]
+for i in range(len(matriz)):
+for j in range(len(matriz[0])):
+matriz_rotacionada[j][len(matriz) - 1 - i] = matriz[i][j]
+print(matriz_rotacionada)
