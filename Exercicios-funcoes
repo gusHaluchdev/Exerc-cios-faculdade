@@ -1,0 +1,120 @@
+1
+def funcao(a, b ):
+return a + b
+print(funcao(2, 3 ))
+2
+def multiplicacao( a, b):
+return a* b
+print(multiplicacao(4, 5))
+3
+def mensagem(nome):
+print(f"ola {nome}! ")
+mensagem("Gustavo")
+4
+def maior(a, b ):
+if a > b :
+return( a )
+else:
+return( b)
+5
+def divisao(a, b):
+return a/b, a%b
+6
+def par_ou_impar(n):
+if n %2 == 0:
+return True
+else:
+return False
+7
+#Sera exibido None, nao foi armazenado nenhum valor
+8
+def apresentar(nome, idade, cidade):
+print(f"boa noite {nome}, {idade}, que mora em {cidade}")
+apresentar ("yasmim",17, "curitiba")
+9
+#ja esta
+10
+#vai aparecer normalmente
+11
+def saudacao(nome, periodo=dia):
+print(f"Bom dia {nome}, agora o dia esta {periodo}")
+12
+def saudacao(nome, periodo):
+print(f"Bom dia {nome}, agora o dia esta {periodo}")
+13
+#o erro esta em indicar o valor sem um valor para b
+14
+def somar_todos(*numeros):
+return sum(numeros)
+15
+def mostrar_dados(**dados):
+print(dados)
+16
+#a diferença esta na flexibilidade entre um e outro (**kwargs) é quando
+vc nao sabe
+#as variaveis que podem estar
+17
+#nada
+18
+contador = 0
+def incrementar():
+global contador
+contador += 1
+19
+def triplo(x):
+x = 10
+20
+def executar(funcao, valor):
+return funcao(valor)
+21
+quadrado = lambda x: x**2
+22
+lista = [1,2,3,4,5]
+quadrado = lambda x: x**2
+drugs = map(quadrado, lista)
+print(list(drugs))
+23
+lista = [1, 2, 3, 4, 5, 6]
+filtracao = filter(lambda x:x%2==0, lista)
+print(lista(filtracao))
+24
+def fatorial(n):
+if n == 0 or n == 1:
+return 1
+else:
+return n * fatorial(n - 1)
+25
+def contagem(n):
+if n < 0:
+return
+print(n)
+contagem(n - 1)
+#26 nao tem condiçao de parada
+27
+def media(lista):
+return sum(lista)/ len(lista )
+""" soma todos os elementos da lista e
+divide pela quantidade de elementos """
+28
+def media(lista):
+return sum(lista)/ len(lista )
+""" soma todos os elementos da lista e
+divide pela quantidade de elementos """
+help(function)
+29
+def calculadora (a, b, operacao)
+"""a calculadora so vai calcular os 4 basicos tipos(+-*/)"""
+if operacao =="+":
+return a+ b
+elif operacao =="- ":
+return a -b
+elif operacao == "*":
+return a*b
+elif operacao == "/":
+return a//b
+else:
+print("nao temos essa operação ainda volte mais tarde ")
+30
+def processar_dados(*args, **kwargs):
+print("Args:", args)
+print("Kwargs:", kwargs)
