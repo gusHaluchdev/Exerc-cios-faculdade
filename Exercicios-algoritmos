@@ -1,0 +1,45 @@
+Exercício 1: Média de Notas (Entrada e Processamento)
+Crie um programa que peça duas notas ao aluno (use o tipo float para aceitar decimais).
+Calcule a média aritmética e exiba o resultado.
+RESPOSTA
+N1= float(input("digite sua nota:"))
+N2= float(input("digite sua nota:"))
+Media=(N1+N2)/2
+print("A média das notas é:", Media)
+Saida= print( resultado)
+Exercício 2: Calculadora de Desconto (Operações)
+Peça o preço de um produto e o valor do desconto (em porcentagem). Calcule quanto o
+cliente vai pagar e mostre o valor final.
+RESPOSTA
+P=Float(input(Digite o valor do produto ))
+D=Int(input(Digite o valor do desconto))
+V= P-(P*D/100)
+print("O valor do produto com desconto é:", V)
+Exercício 3: Par ou Ímpar? (Condicional)
+Peça um número inteiro ao usuário. Use o operador de resto da divisão (%) para descobrir
+se o número é Par ou Ímpar e exiba a resposta.
+RESPOSTA
+N=int(input("digite um número:"))
+if N%2==0:
+print("O número é par")
+else:
+print("O número é impar")
+Exercício 4: No Python, qual é a função padrão utilizada para exibir mensagens no
+console, substituindo o comando “escreva” do Portugol?
+a) output()
+b) print(x)
+c) input()
+d) write()
+Exercício 5: Ao ler a idade de um usuário com “input()”, o Python recebe o dado como
+Texto (String). Qual função deve ser usada para converter esse valor em um número
+inteiro?
+a) float()
+b) convert()
+c) str()
+d) int(x)
+Exercício 6: Diferente do Portugol que usa chaves { }, como o Python define quais linhas de
+código pertencem a um bloco “if” ou “else”?
+a) Através da indentação (espaçamento à esquerda)
+b) Usando parênteses (x)
+c) Usando a palavra-chave 'fim'
+d) Colocando tudo na mesma linha
