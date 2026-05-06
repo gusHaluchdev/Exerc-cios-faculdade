@@ -1,0 +1,54 @@
+1-
+a = []
+for i in range(10):
+numero = int(input(f"Digite o {i+1}º número inteiro: "))
+a.append(numero)
+print("Lista de números:", a)
+2 -
+for i in a:
+print (a)
+3-
+numeros_inteiros = 0
+a = []
+for i in range (10):
+numeros_inteiros = int(input("Digite um número inteiro: "))
+a.append(numeros_inteiros)
+valor_min= min(a)
+print("O menor número é: ", valor_min)
+valor_max= max(a)
+print("O maior número é: ", valor_max)
+4
+lista_de_alunos = []
+quantidade_alunos = int(input("Quantos alunos tem na turma? " ))
+notas = []
+for i in range(quantidade_alunos):
+nota = int(input(f"Digite a nota do aluno {i+1}(0, 100): "))
+notas.append(nota)
+media = 60
+if nota > media:
+lista_de_alunos.append(f"Aluno {i+1} - Aprovado")
+else:
+lista_de_alunos.append(f"Aluno {i+1} - Reprovado")
+print("\nResultados:")
+for resultado in lista_de_alunos:
+print(resultado)
+i=1
+lista = []
+while i <= 5:
+numeros = int(input("Digite um numero: "))
+lista.append(numeros)
+i += 1
+soma = sum(lista)
+print("A soma dos numeros é: ", soma)
+media= soma / len(lista)
+print("A media dos numeros é: ", media)
+maiorpar = [numeros for numeros in lista if numeros % 2 == 0]
+print("O maior numero par é: ", max(maiorpar)
+if maiorpar
+else "Não tem nenhum par na lista")
+menorimpar = [numeros for numeros in lista if numeros % 2 != 0]
+print("O menor numero impar da sua listinha é: ", min(menorimpar)
+if menorimpar
+else "Não tem nenhum impar na lista..melhore")
+Obs: fiquei meia hora para descobrir que tinha uma linha de codigo
+errada
