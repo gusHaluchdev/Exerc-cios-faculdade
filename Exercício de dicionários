@@ -1,0 +1,241 @@
+1
+pessoa = {"nome": "João", "idade": 30, "cidade": "São Paulo"}
+chave = input("Digite uma chave (nome, idade ou cidade): ")
+if chave in pessoa:
+print(pessoa[chave])
+else:
+print("Chave não encontrada")
+2
+dicionario = {'arroz': 20, 'feijão': 10, 'carne': 30}
+produto = input("Qual produto você deseja atualizar? ")
+novo_preco = float(input("Digite o novo preço: "))
+if produto in dicionario:
+dicionario[produto] = novo_preco
+print("Dicionário atualizado:", dicionario)
+else:
+print("Produto não encontrado.")
+3
+dicionario = {}
+nome = input("Digite um nome: ")
+idade = input("Digite uma idade: ")
+print("Dicionário antes de adicionar os dados:", dicionario)
+dicionario[nome] = idade
+print("Dicionário após adicionar os dados:", dicionario)
+4
+informacoes = {}
+for i in range(3):
+chave = input("Digite a chave: ")
+valor = input("Digite o valor: ")
+informacoes[chave] = valor
+dicionario = dict(informacoes)
+print("O dicionário construído é:", dicionario)
+5
+dicionario = {
+"nome": "João",
+"idade": 30,
+"cidade": "São Paulo"
+}
+print("Dicionário:", dicionario)
+apagar = input("SIM/NAO: ")
+if apagar == "SIM":
+dicionario.clear()
+print("Dicionário após apagar todos os elementos:", dicionario)
+else:
+print("Nenhuma ação realizada.")
+6
+dicionario_aleatorio = {
+"chave1": "valor1",
+"chave2": "valor2",
+"chave3": "valor3",
+"chave4": "valor4",
+"chave5": "valor5"
+}
+print(dicionario_aleatorio)
+copia_dicionario = dicionario_aleatorio.copy()
+mudança = {"chave1": "novo_valor1", "chave2": "novo_valor2"}
+copia_dicionario.update(mudança)
+print(copia_dicionario)
+print(dicionario_aleatorio)
+7
+lista = ()
+lista_1 = str(input("Digite a lista de nomes mas LEMBRE DE SEPARAR POR
+VIRGULA: "))
+fromkey = lista_1.split(",")
+lista = fromkey
+print(lista)
+8
+alunos_notas = {
+"Alice": 8.5,
+"Bob": 7.0,
+"Charlie": 9.2,
+"Diana": 6.8,
+"Eve": 5.5
+}
+pesquisa = str(input("Digite o nome do aluno para verificar a nota: "))
+if pesquisa in alunos_notas:
+get = alunos_notas.get(pesquisa)
+print(f"A nota de {pesquisa} é: {get}")
+else:
+print("Aluno não encontrado.")
+9
+produtos = {
+'Arroz': 5.99,
+'Feijão': 3.49,
+'Macarrão': 2.99,
+'Óleo': 4.49,
+'Açúcar': 2.79
+}
+print("Produtos disponíveis:")
+for produto in produtos.keys():
+print(produto)
+print("\nPreços dos produtos:")
+for preco in produtos.values():
+print(preco)
+print("\nProdutos e seus preços:")
+for produto, preco in produtos.items():
+print(f"{produto}: R${preco:.2f}")
+10
+dados = {
+'nome': 'Alice',
+'idade': 30,
+'cidade': 'São Paulo'
+}
+print("Dicionário inicial:", dados)
+chave_para_remover = input("Digite a chave que deseja remover: ")
+valor_removido = dados.pop(chave_para_remover, None)
+if valor_removido is not None:
+print(f"Chave '{chave_para_remover}' removida com valor:
+{valor_removido}")
+chave, valor = dados.popitem()
+print(f"Item removido com popitem(): {chave}: {valor}")
+print("Digite os novos dados:")
+novo_nome = input("Nome: ")
+novo_idade = int(input("Idade: "))
+nova_cidade = input("Cidade: ")
+dados.update({
+'nome': novo_nome,
+'idade': novo_idade,
+'cidade': nova_cidade
+})
+print("Dicionário final:", dados)
+11
+class UserManager:
+def __init__(self):
+self.users = {}
+def add_user(self,idade,nome,email):
+if email in self.users:
+print("Usuário já existe.")
+else:
+self.users[email] = {"nome": nome, "email": email, "idade":
+idade}
+print("Usuário adicionado com sucesso.")
+def remove_user(self,email):
+if email in self.users:
+del self.users[email]
+print("Usuário removido com sucesso.")
+12
+def __init__(self):
+self.users = {}
+def add_user(self,idade,nome,email):
+if email in self.users:
+print("Usuário já existe.")
+else:
+self.users[email] = {"nome": nome, "email": email, "idade":
+idade}
+print("Usuário adicionado com sucesso.")
+def remove_user(self,email):
+if email in self.users:
+del self.users[email]
+print("Usuário removido com sucesso.")
+
+
+
+-------------------
+Ultimo exercicio refeito e melhorado
+nome = {
+"Alice": 30,
+"Bob": 25,
+"Charlie": 35
+}
+
+print(" Bom dia o que deseja fazer hoje ?")
+print("Tecle 1 para mostrar apenas os nomes dos usuarios \n
+" Tecle 2 para mostrar apenas as idades dos usuarios \n "
+"Tecle 3 para mostrar os pares nome-idade dos usuarios \n "
+"Tecle 4 para buscar um usuario pelo nome \n "
+"Tecle 5 para adicionar um novo usuario \n "
+"Tecle 6 para atualizar a idade de um usuario existente \n "
+"Tecle 7 para remover um usuario especifico \n"
+" Tecle 8 para remover o ultimo elemento inserido no dicionario \n "
+"Tecle 9 para criar uma copia do dicionario atual e alterar um valor na copia"
+"Tecle 10 para apagar todo o dicionario "
+"Tecle 11 para fazer um novo dicionario")
+
+Tecla_digitada = int(input("Digite a opção desejada: "))
+if Tecla_digitada == 1:
+print(nome.keys())
+elif Tecla_digitada == 2:
+print(nome.values())
+elif Tecla_digitada == 3:
+print(nome.items())
+elif Tecla_digitada == 4:
+busca = input("Digite o nome do usuário: ")
+if busca in nome:
+print(f"Usuário encontrado! Idade: {nome[busca]}")
+else:
+print("Usuário não encontrado")
+elif Tecla_digitada == 5:
+print("Qual usuario voce quer adicionar ?")
+novo_usuario = input("digite o nome")
+novo_usuario2 = int(input("digite a idade"))
+nome[novo_usuario] = novo_usuario2
+print("Usuário adicionado!")
+elif Tecla_digitada == 6:
+usuario = input("Digite o nome do usuário: ")
+if usuario in nome:
+nova_idade = int(input("Digite a nova idade: "))
+nome[usuario] = nova_idade
+print("Idade atualizada!")
+else:
+print("Usuário não encontrado")
+elif Tecla_digitada == 7:
+matar = input("Digite o usuário que deseja remover: ")
+if matar in nome:
+nome.pop(matar)
+print("Usuário excluído com sucesso")
+else:
+print("Usuário não encontrado")
+elif Tecla_digitada == 8:
+ultimo_item = nome.popitem()
+print("Pronto, seu ultimo item foi excluido com suscesso")
+elif Tecla_digitada == 9:
+copia = nome.copy()
+print("Quer fazer alguma mudança? (S/N)")
+mudanca = input()
+if mudanca == "S":
+print("Repense nas suas atitudes e não faça mudança não!")
+elif mudanca == "N":
+print("Boa, mandou bem demais, poupou o programador")
+else:
+print("Só tem opção S/N cara")
+elif Tecla_digitada == 10:
+apagao_geral = nome.clear()
+elif Tecla_digitada == 11:
+lista_tuplas = []
+print("Digite os usuários (nome e idade). Digite 'sair' para parar.")
+while True:
+nome_usuario = input("Nome: ")
+
+if nome_usuario == "sair":
+break
+
+idade_usuario = int(input("Idade: "))
+
+# cria a tupla e adiciona na lista
+lista_tuplas.append((nome_usuario, idade_usuario))
+
+# transforma em dicionário
+novo_dicionario = dict(lista_tuplas)
+
+print("Novo dicionário criado:")
+print(novo_dicionario)
